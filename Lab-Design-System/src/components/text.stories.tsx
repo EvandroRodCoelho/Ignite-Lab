@@ -5,8 +5,16 @@ export default {
     component: Text,
     args: {
         children: "Lorem ipsum",
-        size: "sm"
+        size: "md"
     },
+    argTypes: {
+        size: {
+            options: ["sm", "md", "lg"],
+            control: {
+                type: 'inline-radio'
+            }
+        }
+    }
 } as Meta<TextProps>;
 
 export const Default: StoryObj<TextProps> = {}
@@ -26,5 +34,12 @@ export const CustomComponents: StoryObj<TextProps> = {
         children: (
             <p>testando</p>
         )
+    },
+    argTypes: {
+        children: {
+            table: {
+                diseble: true
+            }
+        }
     }
 }
