@@ -23,7 +23,7 @@ git clone https://github.com/EvandroRodCoelho/Ignite-Lab.git
 ```
 ### Navegue até o diretório
 ```bash
-cd ignitelab3-designsystem
+cd Ignite-lab
 ```
 ### Instale as dependências
 ```bash
